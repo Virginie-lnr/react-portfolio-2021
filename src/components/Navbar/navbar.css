@@ -25,8 +25,57 @@ nav {
   text-transform: uppercase;
   transition: all 0.3s;
 }
-.navigation-bar ul li a:hover {
-  border-bottom: 5px solid #FFDA03;
+.navigation-bar ul li a#about:hover {
+  background-image: linear-gradient(120deg, #FFDA03 0%, #FFDA03 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.navigation-bar ul li a#about:focus{
+  background-image: linear-gradient(120deg, #FFDA03 0%, #FFDA03 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+}
+.navigation-bar ul li a#services:hover {
+  background-image: linear-gradient(120deg, #40A0E8 0%, #40A0E8 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.navigation-bar ul li a#services:focus {
+  background-image: linear-gradient(120deg, #40A0E8 0%, #40A0E8 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+}
+.navigation-bar ul li a#work:hover {
+  background-image: linear-gradient(120deg, #C773ED 0%, #C773ED 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.navigation-bar ul li a#work:focus {
+  background-image: linear-gradient(120deg, #C773ED 0%, #C773ED 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+}
+.navigation-bar ul li a#certifications:hover {
+  background-image: linear-gradient(120deg, #60E4C6 0%, #60E4C6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.navigation-bar ul li a#certifications:focus {
+  background-image: linear-gradient(120deg, #60E4C6 0%, #60E4C6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
 }
 .contact-btn {
   text-decoration: none;
@@ -39,9 +88,10 @@ nav {
   text-transform: capitalize;
   background: #C573EC;
   color: white;
+  transition: all 0.3s ease 0s;
 }
 .contact-btn a:hover {
-  background: #292423;
+  background: #d190f0;
   color: #fff;
   opacity: 1;
 }
@@ -72,7 +122,7 @@ nav {
 }
 
 @media (max-width: 915px) {
-  .contact-btn{
+  .navbar-btn{
     display: none;
   }
 
@@ -104,10 +154,7 @@ nav {
   .contact-btn {
     margin-left: 0 !important;
   }
-  .contact-btn a {
-    background: #292423;
-    color: #fff;
-  }
+
 }
 
 @media (min-width: 915px) {

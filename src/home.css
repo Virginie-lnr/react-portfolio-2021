@@ -1,18 +1,20 @@
-.col-left span {
+.col-left span#icon-arrow {
   display: block;
   font-size: 20px;
   line-height: 27px;
-  margin-bottom: 10px;
+  margin-left: 15px;
 }
 .col-left h1 {
-  font-size: 30px;
+  font-size: 49px;
   font-weight: 500;
   color: #292423;
-  line-height: 41px;
+  line-height: 64px;
   margin-bottom: 15px;
+  letter-spacing: 0.01em;
 }
 .col-left p {
   width: 85%;
+  font-size: 20px;
   font-weight: normal;
   line-height: 145%;
   margin-bottom: 20px;
@@ -20,7 +22,11 @@
 }
 #home-picture {
   max-width: 100%;
-  width: 450px;
+  width: 400px;
+  transition: transform 0.5s;
+}
+#home-picture:hover{
+  transform : rotate(10deg);
 }
 
 /* button see my work */
@@ -39,10 +45,7 @@ a.btn-main {
   line-height: 22px;
   font-weight: 400;
   margin-top: 35px;
-  transition: all 0.3s;
-}
-a.btn-main:hover {
-  background: black;
+  transition: all 0.3s ease 0s;
 }
 a.btn-main span {
   display: inline-block;
@@ -57,9 +60,14 @@ a.btn-main span {
 a.btn-main span img {
   margin: 0 0 8px 0;
 }
-a.btn-main:hover span {
-  background: black;
+a.btn-main:hover {
+  background: #9bf0dc;
 }
+a.btn-main:hover span {
+  background: #9bf0dc;
+}
+
+/* hr footer line with social icons */
 
 .flex-items{
   display: flex;
@@ -67,8 +75,6 @@ a.btn-main:hover span {
 }
 
 .separator-line{
-  /* position: absolute;
-  left: 0; */
   margin-left: -100px;
   width: 95%;
   color: color;
@@ -78,17 +84,43 @@ a.btn-main:hover span {
 
 .iconLinkedin{
   margin-left: 20px;
-  width: 30px;
+  width: 20px;
+  color: #686868;
+  transition: all 0.3s ease 0s;
 }
 .iconGithub{
-  margin-left: 10px;
-  width: 30px;
+  margin-left: 20px;
+  width: 20px;
+  color: #686868 !important;
+  transition: all 0.3s ease 0s;
 }
 .iconBehance{
-  margin-left: 10px;
-  width: 30px;
+  margin-left: 20px;
+  width: 23px;
+  color: #686868 !important;
+  transition: all 0.3s ease 0s;
+}
+.iconBehance:hover{
+  color: #C573EC !important;
+}
+.iconLinkedin:hover{
+  color: #3F9EE5 !important;
+}
+.iconGithub:hover{
+  color: #5FE2C5 !important;
 }
 
+.underline--magical {
+  background-image: linear-gradient(120deg, #71f1d6 0%, #5FE2C5 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  padding: 0 .2em;
+  transition: background-size 0.25s ease-in;
+}
+/* .underline--magical:hover {
+  background-size: 100% 88%;
+} */
 /* media queries */
 @media (max-width: 800px) {
 
@@ -112,11 +144,17 @@ a.btn-main:hover span {
     margin: 0px 0 4px 0;
   }
   #home-picture{
-    display: none;
+    max-width: 100%;
+    width: 250px;
   }
 }
 @media (max-width: 400px){
   #footer-line{
     margin-top: 50px;
+  }
+}
+@media (max-width: 520px){
+  #home-picture{
+    display: none;
   }
 }

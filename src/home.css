@@ -30,7 +30,7 @@
 }
 
 /* button see my work */
-a.btn-main {
+a.btn-main-green {
   display: flex;
   align-items: center;
   padding: 12px 20px;
@@ -47,7 +47,7 @@ a.btn-main {
   margin-top: 35px;
   transition: all 0.3s ease 0s;
 }
-a.btn-main span {
+a.btn-main-green span {
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -57,13 +57,13 @@ a.btn-main span {
   transition: all 0.3s;
   text-align: center;
 }
-a.btn-main span img {
+a.btn-main-green span img {
   margin: 0 0 8px 0;
 }
-a.btn-main:hover {
+a.btn-main-green:hover {
   background: #9bf0dc;
 }
-a.btn-main:hover span {
+a.btn-main-green:hover span {
   background: #9bf0dc;
 }
 
@@ -75,38 +75,38 @@ a.btn-main:hover span {
 }
 
 .separator-line{
-  margin-left: -100px;
-  width: 95%;
+  margin-left: -160px;
+  width: 170%;
   color: color;
   background-color: color;
   height: 5;
 }
 
-.iconLinkedin{
-  margin-left: 20px;
+.iconLinkedin-home{
+  margin-left: 80px;
   width: 20px;
   color: #686868;
   transition: all 0.3s ease 0s;
 }
-.iconGithub{
+.iconGithub-home{
   margin-left: 20px;
   width: 20px;
   color: #686868 !important;
   transition: all 0.3s ease 0s;
 }
-.iconBehance{
+.iconBehance-home{
   margin-left: 20px;
   width: 23px;
   color: #686868 !important;
   transition: all 0.3s ease 0s;
 }
-.iconBehance:hover{
+.iconBehance-hover:hover{
   color: #C573EC !important;
 }
-.iconLinkedin:hover{
+.iconLinkedin-hover:hover{
   color: #3F9EE5 !important;
 }
-.iconGithub:hover{
+.iconGithub-hover:hover{
   color: #5FE2C5 !important;
 }
 
@@ -137,10 +137,10 @@ a.btn-main:hover span {
   .col-left p {
     width: 100%;
   }
-  a.btn-main {
+  a.btn-main-green {
     font-size:15px;
   }
-  a.btn-main span img {
+  a.btn-main-green span img {
     margin: 0px 0 4px 0;
   }
   #home-picture{
@@ -148,6 +148,7 @@ a.btn-main:hover span {
     width: 250px;
   }
 }
+
 @media (max-width: 400px){
   #footer-line{
     margin-top: 50px;
@@ -158,3 +159,5 @@ a.btn-main:hover span {
     display: none;
   }
 }
+
+/* about section */

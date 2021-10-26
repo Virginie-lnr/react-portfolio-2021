@@ -144,10 +144,13 @@ background-image: linear-gradient(120deg, #fdf4c0 10%, #fdf4c0 30%);
 }
 
 /* SKILLS SECTION */
+.container-skills p{
+  color: black;
+}
 .skills{
   margin-top: 70px;
   background-color: #FFEC80;
-  padding: 2rem;
+  padding: 2rem 7rem;
 }
 #skills-title{
   display: inline-block;
@@ -163,6 +166,11 @@ background-image: linear-gradient(120deg, #fdf4c0 10%, #fdf4c0 30%);
 }
 .skills-items{
   margin: 0;
+}
+.skills-icon{
+  color: #2E3A59;
+  width: 30px;
+  height: auto;
 }
 .underline-magical--purple{
   background-image: linear-gradient(120deg, #C773ED 0%, #C773ED 100%);

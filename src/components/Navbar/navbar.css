@@ -2,13 +2,25 @@
 
 nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .navigation-bar ul {
   padding: 0;
   margin: 0;
+  justify-content: space-between;
+}
+
+@media (min-width: 1075px){
+  .navigation-bar ul{
+    margin-left: 85px;
+  }
+}
+@media (max-width: 900px){
+  .navigation-bar ul{
+    margin-left: 10px;
+  }
 }
 
 .navigation-bar ul li {
@@ -39,14 +51,14 @@ nav {
   background-position: 0 88%;
 }
 .navigation-bar ul li a#services:hover {
-  background-image: linear-gradient(120deg, #40A0E8 0%, #40A0E8 100%);
+  background-image: linear-gradient(120deg, #60E4C6 0%, #60E4C6 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.4em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
 }
 .navigation-bar ul li a#services:focus {
-  background-image: linear-gradient(120deg, #40A0E8 0%, #40A0E8 100%);
+  background-image: linear-gradient(120deg, #60E4C6 0%, #60E4C6 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.4em;
   background-position: 0 88%;
@@ -79,6 +91,7 @@ nav {
 }
 .contact-btn {
   text-decoration: none;
+  margin-left: auto;
 }
 .contact-btn a {
   padding: 12px 20px;
@@ -104,6 +117,8 @@ nav {
   height: 30px;
   padding-top: 5px;
   cursor: pointer;
+  margin-left: auto;
+
 }
 
 .toggle-bar span {
@@ -115,13 +130,13 @@ nav {
   margin-bottom: 4px;
 }
 
-@media (min-width: 915px) {
+@media (min-width: 950px) {
   .toggle-bar {
     display: none;
   }
 }
 
-@media (max-width: 915px) {
+@media (max-width: 949px) {
   .navbar-btn{
     display: none;
   }
@@ -152,12 +167,12 @@ nav {
     text-align: center;
   }
   .contact-btn {
-    margin-left: 0 !important;
+    margin-left: auto;
   }
 
 }
 
-@media (min-width: 915px) {
+@media (min-width: 950px) {
   .navigation-bar {
     display: block !important;
   }

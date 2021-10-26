@@ -1,0 +1,12 @@
+.contact-container > h1{
+    text-align:center;
+}
+
+.contact-container > h1:after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 50px;
+    margin: 20px auto 0;
+    background: #FFEC80;
+}
